@@ -290,7 +290,7 @@ def segParagraph(rawtext:str):
         result.append(segSentence(paragraph))
     return wash(result) # A three level list: article - paragraph - sentence
 
-def main(path):
+def main(path,export):
     with open(path, mode="r", encoding="utf-8") as file:
         rawtext=file.read()
     result=segParagraph(rawtext)
@@ -303,25 +303,21 @@ def main(path):
         for _ in result:
             print(_)
 
-    # lineTail="\n\tL2\n\tL3\n\tL4\n\tL5\n\tL6\n"
-    # with open(export, mode="a", encoding="utf-8") as exportFile:
-    #     i=0
-    #     j=0
-    #     for paragraph in result:
-    #         i+=1
-    #         for sentence in paragraph:
-    #             j+=1
-    #             exportFile.write(f"{i}.{j}\tL1\t")
-    #             exportFile.write("\t".join(sentence))
-    #             exportFile.write(lineTail)
-    #         j=clear(j)
-    #     i=clear(i)
-
-    # Calculate word count
-    i=0
-    for paragraph in result:
-        for sentence in paragraph:
-            for word in sentence:
-                i+=1
-    print(i)
-    i=clear(i)
+    lineTail="\n\tL2\n\tL3\n\tL4\n\tL5\n\tL6\n"
+    with open(export, mode="a", encoding="utf-8") as exportFile:
+        i=0
+        j=0
+        k=0
+        for paragraph in result:
+            i+=1
+            for sentence in paragraph:
+                j+=1
+                exportFile.write(f"{i}.{j}\tL1\t")
+                exportFile.write("\t".join(sentence))
+                exportFile.write(lineTail)
+                k+=len(sentence)
+            j=clear(j)
+        i=clear(i)
+        print("="*12)
+        print(f"Word count: {k}")
+        k=clear(k)
