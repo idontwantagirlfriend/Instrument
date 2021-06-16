@@ -1,0 +1,798 @@
+1.1	L1	The	Records	of	the	Grand	Historian	,	also	known	by	its	Chinese	name	Shiji	,	is	a	monumental	history	of	ancient	China	and	the	world	finished	around	94	BC	by	the	Western	Han	Dynasty	official	Sima	Qian	after	having	been	started	by	his	father	,	Sima	Tan	,	Grand	Astrologer	to	the	imperial	court	.
+	L2
+	L3
+	L4
+	L5
+	L6
+1.2	L1	The	work	covers	the	world	as	it	was	then	known	to	the	Chinese	and	a	2,	500-year	period	from	the	age	of	the	legendary	Yellow	Emperor	to	the	reign	of	Emperor	Wu	of	Han	in	the	author's	own	time	.
+	L2
+	L3
+	L4
+	L5
+	L6
+2.1	L1	The	Records	has	been	called	a	"	foundational	text	in	Chinese	civilization	"	.
+	L2
+	L3
+	L4
+	L5
+	L6
+2.2	L1	After	Confucius	and	the	First	Emperor	of	Qin	,	"	Sima	Qian	was	one	of	the	creators	of	Imperial	China	,	not	least	because	by	providing	definitive	biographies	,	he	virtually	created	the	two	earlier	figures	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+2.3	L1	The	Records	set	the	model	for	the	24	subsequent	dynastic	histories	of	China	.
+	L2
+	L3
+	L4
+	L5
+	L6
+2.4	L1	In	contrast	to	Western	historical	works	,	the	Records	do	not	treat	history	as	"	a	continuous	,	sweeping	narrative	"	,	but	rather	break	it	up	into	smaller	,	overlapping	units	dealing	with	famous	leaders	,	individuals	,	and	major	topics	of	significance	.
+	L2
+	L3
+	L4
+	L5
+	L6
+3.1	L1	The	work	that	became	Records	of	the	Grand	Historian	was	begun	by	Sima	Tan	,	who	was	Grand	Astrologer	(	Taishi	太史	)	of	the	Han	dynasty	court	during	the	late	2nd	century	BC	.
+	L2
+	L3
+	L4
+	L5
+	L6
+3.2	L1	Sima	Tan	drafted	plans	for	the	ambitious	work	and	left	behind	some	fragments	and	notes	that	may	have	been	incorporated	into	the	final	text	.
+	L2
+	L3
+	L4
+	L5
+	L6
+3.3	L1	After	his	death	in	110	BC	,	the	project	was	continued	and	completed	by	his	son	and	successor	Sima	Qian	,	who	is	generally	credited	as	the	work's	author	.
+	L2
+	L3
+	L4
+	L5
+	L6
+3.4	L1	The	exact	date	of	the	Records's	completion	is	unknown	,	but	it	is	certain	that	Sima	Qian	completed	it	before	his	death	about	86	BC	,	with	one	copy	residing	in	the	imperial	capital	of	Chang'an	(	present-day	Xi'an	)	and	the	other	copy	probably	being	stored	in	his	home	.	[	note	1	]
+	L2
+	L3
+	L4
+	L5
+	L6
+4.1	L1	The	original	title	of	the	work	,	as	given	by	the	author	in	the	postface	is	Taishigongshu	(	太史公書	)	,	or	Records	of	the	Grand	Historian	,	although	it	was	also	known	by	a	variety	of	other	titles	,	including	Taishigongji	(	太史公記	)	and	Taishigongzhuan	(	太史公傳	)	in	ancient	times	.
+	L2
+	L3
+	L4
+	L5
+	L6
+4.2	L1	Eventually	,	Shiji	(	史記	)	,	or	Historical	Records	became	the	most	commonly	used	title	in	Chinese	.
+	L2
+	L3
+	L4
+	L5
+	L6
+4.3	L1	This	title	was	originally	used	to	refer	to	any	general	historical	text	,	although	after	the	Three	Kingdoms	period	,	[	note	2	]	Shiji	gradually	began	to	be	used	exclusively	to	refer	to	Sima	Qian's	work	.
+	L2
+	L3
+	L4
+	L5
+	L6
+4.4	L1	In	English	,	the	original	title	,	Records	of	the	Grand	Historian	is	in	common	use	,	although	Historical	Records	,	The	Grand	Scribe's	Records	,	and	Records	of	the	Historian	are	also	used	.
+	L2
+	L3
+	L4
+	L5
+	L6
+5.1	L1	Details	of	the	Records'	early	reception	and	circulation	are	not	well	known	.
+	L2
+	L3
+	L4
+	L5
+	L6
+5.2	L1	A	number	of	1st-century	BC	authors	,	such	as	the	scholar	Chu	Shaosun	(	褚少孫	;	fl	.
+	L2
+	L3
+	L4
+	L5
+	L6
+5.3	L1	32–	7	BC	)	,	added	interpolations	to	the	Records	,	and	may	have	had	to	reconstruct	portions	of	it	:	ten	of	the	original	130	chapters	were	lost	in	the	Eastern	Han	period	(	AD	25–	220	)	and	seem	to	have	been	reconstructed	later	.
+	L2
+	L3
+	L4
+	L5
+	L6
+6.1	L1	Beginning	in	the	Northern	and	Southern	dynasties	(	420–	589	)	and	the	Tang	dynasty	(	618–	907	)	,	a	number	of	scholars	wrote	and	edited	commentaries	to	the	Records	.
+	L2
+	L3
+	L4
+	L5
+	L6
+6.2	L1	Most	2nd-millennium	editions	of	the	Records	include	the	commentaries	of	Pei	Yin	(	裴駰	,	5th	century	)	,	Sima	Zhen	(	early	8th	century	)	,	and	Zhang	Shoujie	(	張守節	,	early	8th	century	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+6.3	L1	The	combined	commentaries	of	these	three	scholars	is	known	as	the	Sanjiazhu	(	三家注	,	"	commentaries	of	the	three	experts	"	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+6.4	L1	The	primary	modern	edition	of	the	Records	is	the	ten-volume	Zhonghua	Book	Company	edition	of	1959	(	revised	in	1982	)	,	and	is	based	on	an	edition	prepared	by	the	Chinese	historian	Gu	Jiegang	in	the	early	1930s	and	includes	the	Sanjiazhu	.
+	L2
+	L3
+	L4
+	L5
+	L6
+7.1	L1	Manuscripts
+	L2
+	L3
+	L4
+	L5
+	L6
+8.1	L1	There	are	two	known	surviving	fragments	of	Records	manuscripts	from	before	the	Tang	dynasty	,	both	of	which	are	preserved	in	the	Ishiyama-dera	temple	in	Ōtsu	,	Japan	.
+	L2
+	L3
+	L4
+	L5
+	L6
+8.2	L1	Portions	of	at	least	nine	Tang	dynasty	manuscripts	survive	:	three	fragments	discovered	among	the	Dunhuang	manuscripts	in	the	early	20th	century	,	and	six	manuscripts	preserved	in	Japanese	temples	and	museums	,	such	as	the	Kōzan-ji	temple	in	Kyoto	and	the	Tōyō	Bunko	museum	in	Tokyo	.
+	L2
+	L3
+	L4
+	L5
+	L6
+8.3	L1	A	number	of	woodblock	printed	editions	of	the	Records	survive	,	the	earliest	of	which	date	to	the	Song	dynasty	(	960–	1279	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+9.1	L1	In	all	,	the	Records	is	about	526,	500	Chinese	characters	long	,	making	it	four	times	longer	than	Thucydides'	History	of	the	Peloponnesian	War	and	longer	than	the	Old	Testament	.
+	L2
+	L3
+	L4
+	L5
+	L6
+10.1	L1	Sima	Qian	conceived	and	composed	his	work	in	self-contained	units	,	with	a	good	deal	of	repetition	between	them	.
+	L2
+	L3
+	L4
+	L5
+	L6
+10.2	L1	His	manuscript	was	written	on	bamboo	slips	with	about	24	to	36	characters	each	,	and	assembled	into	bundles	of	around	30	slips	.
+	L2
+	L3
+	L4
+	L5
+	L6
+10.3	L1	Even	after	the	manuscript	was	allowed	to	circulate	or	be	copied	,	the	work	would	have	circulated	as	bundles	of	bamboo	slips	or	small	groups	.
+	L2
+	L3
+	L4
+	L5
+	L6
+10.4	L1	Endymion	Wilkinson	calculates	that	there	were	probably	between	466	and	700	bundles	,	whose	total	weight	would	have	been	88–	132	pounds	(	40–	60	kg	)	,	which	would	have	been	difficult	to	access	and	hard	to	transport	.
+	L2
+	L3
+	L4
+	L5
+	L6
+10.5	L1	Later	copies	on	silk	would	have	been	much	lighter	,	but	also	expensive	and	rare	.
+	L2
+	L3
+	L4
+	L5
+	L6
+10.6	L1	Until	the	work	was	transferred	to	paper	many	centuries	later	,	circulation	would	have	been	difficult	and	piecemeal	,	which	accounts	for	many	of	the	errors	and	variations	in	the	text	.
+	L2
+	L3
+	L4
+	L5
+	L6
+11.1	L1	Sima	Qian	organized	the	chapters	of	Records	of	the	Grand	Historian	into	five	categories	,	which	each	comprise	a	section	of	the	book	.
+	L2
+	L3
+	L4
+	L5
+	L6
+12.1	L1	Basic	Annals
+	L2
+	L3
+	L4
+	L5
+	L6
+13.1	L1	The	"	Basic	Annals	"	(	běnjì	本紀	)	make	up	the	first	12	chapters	of	the	Records	,	and	are	largely	similar	to	records	from	the	ancient	Chinese	court	chronicle	tradition	,	such	as	the	Spring	and	Autumn	Annals	.
+	L2
+	L3
+	L4
+	L5
+	L6
+13.2	L1	The	first	five	cover	either	periods	,	such	as	the	Five	Emperors	,	or	individual	dynasties	,	such	as	the	Xia	,	Shang	,	and	Zhou	dynasties	.
+	L2
+	L3
+	L4
+	L5
+	L6
+13.3	L1	The	last	seven	cover	individual	rulers	,	starting	with	the	First	Emperor	of	Qin	and	progressing	through	the	first	emperors	of	the	Han	dynasty	.
+	L2
+	L3
+	L4
+	L5
+	L6
+13.4	L1	In	this	section	,	Sima	chose	to	also	include	de	facto	rulers	of	China	,	such	as	Xiang	Yu	and	Empress	Dowager	Lü	,	while	excluding	rulers	who	never	held	any	real	power	,	such	as	Emperor	Yi	of	Chu	and	Emperor	Hui	of	Han	.
+	L2
+	L3
+	L4
+	L5
+	L6
+14.1	L1	Tables
+	L2
+	L3
+	L4
+	L5
+	L6
+15.1	L1	Chapters	13	to	22	are	the	"	Tables	"	(	biǎo	表	)	,	which	are	one	genealogical	table	and	nine	other	chronological	tables	.
+	L2
+	L3
+	L4
+	L5
+	L6
+15.2	L1	They	show	reigns	,	important	events	,	and	royal	lineages	in	table	form	,	which	Sima	Qian	stated	that	he	did	because	"	the	chronologies	are	difficult	to	follow	when	different	genealogical	lines	exist	at	the	same	time	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+15.3	L1	Each	table	except	the	last	one	begins	with	an	introduction	to	the	period	it	covers	.
+	L2
+	L3
+	L4
+	L5
+	L6
+16.1	L1	Treatises
+	L2
+	L3
+	L4
+	L5
+	L6
+17.1	L1	The	"	Treatises	"	(	shū	書	,	sometimes	called	"	Monographs	"	)	is	the	shortest	of	the	five	Records	sections	,	and	contains	eight	chapters	(	23–	30	)	on	the	historical	evolution	of	ritual	,	music	,	pitch	pipes	,	the	calendar	,	astronomy	,	sacrifices	,	rivers	and	waterways	,	and	financial	administration	.
+	L2
+	L3
+	L4
+	L5
+	L6
+18.1	L1	Hereditary	Houses
+	L2
+	L3
+	L4
+	L5
+	L6
+19.1	L1	The	"	Hereditary	Houses	"	(	shìjiā	世家	)	is	the	second	largest	of	the	five	Records	sections	,	and	comprises	chapters	31	to	60	.
+	L2
+	L3
+	L4
+	L5
+	L6
+19.2	L1	Within	this	section	,	the	earlier	chapters	are	very	different	in	nature	than	the	later	chapters	.
+	L2
+	L3
+	L4
+	L5
+	L6
+19.3	L1	Many	of	the	earlier	chapters	are	chronicle-like	accounts	of	the	leading	states	of	the	Zhou	dynasty	,	such	as	the	states	of	Qin	and	Lu	,	and	two	of	the	chapters	go	back	as	far	as	the	Shang	dynasty	.
+	L2
+	L3
+	L4
+	L5
+	L6
+19.4	L1	The	later	chapters	,	which	cover	the	Han	dynasty	,	contain	biographies	.
+	L2
+	L3
+	L4
+	L5
+	L6
+20.1	L1	Ranked	Biographies
+	L2
+	L3
+	L4
+	L5
+	L6
+21.1	L1	The	"	Ranked	Biographies	"	(	lièzhuàn	列傳	,	usually	shortened	to	"	Biographies	"	)	is	the	largest	of	the	five	Records	sections	,	covering	chapters	61	to	130	,	and	accounts	for	42	%	of	the	entire	work	.
+	L2
+	L3
+	L4
+	L5
+	L6
+21.2	L1	The	69	"	Biographies	"	chapters	mostly	contain	biographical	profiles	of	about	130	outstanding	ancient	Chinese	men	,	ranging	from	the	moral	paragon	Boyi	from	the	end	of	the	Shang	dynasty	to	some	of	Sima	Qian's	near	contemporaries	.
+	L2
+	L3
+	L4
+	L5
+	L6
+21.3	L1	About	40	of	the	chapters	are	dedicated	to	one	particular	man	,	but	some	are	about	two	related	figures	,	while	others	cover	small	groups	of	figures	who	shared	certain	roles	,	such	as	assassins	,	caring	officials	,	or	Confucian	scholars	.
+	L2
+	L3
+	L4
+	L5
+	L6
+21.4	L1	Unlike	most	modern	biographies	,	the	accounts	in	the	"	Biographies	"	give	profiles	using	anecdotes	to	depict	morals	and	character	,	with	"	unforgettably	lively	impressions	of	people	of	many	different	kinds	and	of	the	age	in	which	they	lived	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+21.5	L1	The	"	Biographies	"	have	been	popular	throughout	Chinese	history	,	and	have	provided	a	large	number	of	set	phrases	still	used	in	modern	Chinese	.
+	L2
+	L3
+	L4
+	L5
+	L6
+22.1	L1	Unlike	subsequent	official	historical	texts	that	adopted	Confucian	doctrine	,	proclaimed	the	divine	rights	of	the	emperors	,	and	degraded	any	failed	claimant	to	the	throne	,	Sima	Qian's	more	liberal	and	objective	prose	has	been	renowned	and	followed	by	poets	and	novelists	.
+	L2
+	L3
+	L4
+	L5
+	L6
+22.2	L1	Most	volumes	of	Liezhuan	are	vivid	descriptions	of	events	and	persons	.
+	L2
+	L3
+	L4
+	L5
+	L6
+22.3	L1	Sima	Qian	sought	out	stories	from	those	who	might	have	closer	knowledge	of	certain	historical	events	,	using	them	as	sources	to	balance	the	reliability	and	accuracy	of	historical	records	.
+	L2
+	L3
+	L4
+	L5
+	L6
+22.4	L1	For	instance	,	the	material	on	Jing	Ke's	attempt	at	assassinating	the	King	of	Qin	incorporates	an	eye-witness	account	by	Xia	Wuju	(	夏無且	)	,	a	physician	to	the	king	of	Qin	who	happened	to	be	attending	the	diplomatic	ceremony	for	Jing	Ke	,	and	this	account	was	passed	on	to	Sima	Qian	by	those	who	knew	Xia	.
+	L2
+	L3
+	L4
+	L5
+	L6
+23.1	L1	It	has	been	observed	that	the	diplomatic	Sima	Qian	has	a	way	of	accentuating	the	positive	in	his	treatment	of	rulers	in	the	Basic	Annals	,	but	slipping	negative	information	into	other	chapters	,	and	so	his	work	must	be	read	as	a	whole	to	obtain	full	information	.
+	L2
+	L3
+	L4
+	L5
+	L6
+23.2	L1	For	example	,	the	information	that	Liu	Bang	(	later	Emperor	Gaozu	of	Han	)	,	in	a	desperate	attempt	to	escape	in	a	chase	from	Xiang	Yu's	men	,	pushed	his	own	children	off	his	carriage	to	lighten	it	,	was	not	given	in	the	emperor's	biography	,	but	in	the	biography	of	Xiang	Yu	.
+	L2
+	L3
+	L4
+	L5
+	L6
+23.3	L1	He	is	also	careful	to	balance	the	negative	with	the	positive	,	for	example	,	in	the	biography	of	Empress	Dowager	Lu	which	contains	startling	accounts	of	her	cruelty	,	he	pointed	out	at	the	end	that	,	despite	whatever	her	personal	life	may	have	been	,	her	rule	brought	peace	and	prosperity	to	the	country	.
+	L2
+	L3
+	L4
+	L5
+	L6
+24.1	L1	Source	materials
+	L2
+	L3
+	L4
+	L5
+	L6
+25.1	L1	Sima's	family	were	hereditary	historians	to	the	Han	emperor	.
+	L2
+	L3
+	L4
+	L5
+	L6
+25.2	L1	Sima	Qian's	father	Sima	Tan	served	as	Grand	Historian	,	and	Sima	Qian	succeeded	to	his	position	.
+	L2
+	L3
+	L4
+	L5
+	L6
+25.3	L1	Thus	he	had	access	to	the	early	Han	dynasty	archives	,	edicts	,	and	records	.
+	L2
+	L3
+	L4
+	L5
+	L6
+25.4	L1	Sima	Qian	was	a	methodical	,	skeptical	historian	who	had	access	to	ancient	books	,	written	on	bamboo	and	wooden	slips	,	from	before	the	time	of	the	Han	dynasty	.
+	L2
+	L3
+	L4
+	L5
+	L6
+25.5	L1	Many	of	the	sources	he	used	did	not	survive	.
+	L2
+	L3
+	L4
+	L5
+	L6
+25.6	L1	He	not	only	used	archives	and	imperial	records	,	but	also	interviewed	people	and	traveled	around	China	to	verify	information	.
+	L2
+	L3
+	L4
+	L5
+	L6
+25.7	L1	In	his	first	chapter	,	"	Annals	of	the	Five	Emperors	,	"
+	L2
+	L3
+	L4
+	L5
+	L6
+25.8	L1	he	writes	,
+	L2
+	L3
+	L4
+	L5
+	L6
+26.1	L1	余嘗西至空桐	，	北過涿鹿	，	東漸於海	，	南浮江淮矣	，	至長老皆各往往稱黃帝	、	堯	、	舜之處	，	風教固殊焉	，	總之不離古文者近是	。
+	L2
+	L3
+	L4
+	L5
+	L6
+27.1	L1	I	myself	have	travelled	west	as	far	as	K'ung-t'ung	,	north	past	Cho-lu	,	east	to	the	sea	,	and	in	the	south	I	have	sailed	the	Yellow	and	Huai	Rivers	.
+	L2
+	L3
+	L4
+	L5
+	L6
+27.2	L1	The	elders	and	old	men	of	these	various	lands	frequently	pointed	out	to	me	the	places	where	the	Yellow	Emperor	,	Yao	,	and	Shun	had	lived	,	and	in	these	places	the	manners	and	customs	seemed	quite	different	.
+	L2
+	L3
+	L4
+	L5
+	L6
+27.3	L1	In	general	those	of	their	accounts	which	do	not	differ	from	the	ancient	texts	seem	to	be	near	to	the	truth	.
+	L2
+	L3
+	L4
+	L5
+	L6
+28.1	L1	—	Sima	Qian	,	translation	by	Burton	Watson
+	L2
+	L3
+	L4
+	L5
+	L6
+29.1	L1	The	Grand	Historian	used	The	Annals	of	the	Five	Emperors	(	五帝系諜	)	and	the	Classic	of	History	as	source	materials	to	make	genealogies	from	the	time	of	the	Yellow	Emperor	until	that	of	the	Gonghe	regency	(	841–	828	BC	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+29.2	L1	Sima	Qian	often	cites	his	sources	.
+	L2
+	L3
+	L4
+	L5
+	L6
+29.3	L1	For	example	,	in	the	first	chapter	,	"	Annals	of	the	Five	Emperors	"	,	he	writes	,	"	I	have	read	the	Spring	and	Autumn	Annals	and	the	Guoyu	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+29.4	L1	In	his	13th	chapter	,	"	Genealogical	Table	of	the	Three	Ages	,	"
+	L2
+	L3
+	L4
+	L5
+	L6
+29.5	L1	Sima	Qian	writes	,	"	I	have	read	all	the	genealogies	of	the	kings	(	dieji	諜記	)	that	exist	since	the	time	of	the	Yellow	Emperor	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+29.6	L1	In	his	14th	chapter	,	"	Yearly	Chronicle	of	the	Feudal	Lords	"	,	he	writes	,	"	I	have	read	all	the	royal	annals	(	chunqiu	li	pudie	春秋曆譜諜	)	up	until	the	time	of	King	Li	of	Zhou	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+29.7	L1	In	his	15th	chapter	,	"	Yearly	Chronicle	of	the	Six	States	,	"
+	L2
+	L3
+	L4
+	L5
+	L6
+29.8	L1	he	writes	,	"	I	have	read	the	Annals	of	Qin	(	qin	ji	秦記	)	,	and	they	say	that	the	Quanrong	[	a	barbarian	tribe	]	defeated	King	You	of	Zhou	[	ca	771	BC	]	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+30.1	L1	In	the	19th	chapter	,	he	writes	,	"	I	have	occasion	to	read	over	the	records	of	enfeoffment	and	come	to	the	case	of	Wu	Qian	,	the	marquis	of	Bian	.	.	.	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+30.2	L1	(	The	father	of	Marquis	Bian	,	Wu	Rui	,	was	named	king	(	wang	)	of	Changsha	in	Hunan	for	his	loyalty	to	Gaozu	.
+	L2
+	L3
+	L4
+	L5
+	L6
+30.3	L1	See	article	on	Zhao	Tuo	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+30.4	L1	In	his	chapter	on	the	patriotic	minister	and	poet	Qu	Yuan	,	Sima	Qian	writes	,	"	I	have	read	[	Qu	Yuan's	works	]	Li	Sao	,	Tianwen	(	"	Heaven	Asking	"	)	,	Zhaohun	(	summoning	the	soul	)	,	and	Ai	Ying	(	Lament	for	Ying	)	"	.
+	L2
+	L3
+	L4
+	L5
+	L6
+30.5	L1	In	the	62nd	chapter	,	"	Biography	of	Guan	and	of	Yan	"	,	he	writes	,	"	I	have	read	Guan's	Mu	Min	(	牧民	-	"	Government	of	the	People	"	,	a	chapter	in	the	Guanzi	)	,	Shan	Gao	(	"	The	Mountains	Are	High	"	)	,	Chengma	(	chariot	and	horses	;	a	long	section	on	war	and	economics	)	,	Qingzhong	(	Light	and	Heavy	;	i	.	e	.
+	L2
+	L3
+	L4
+	L5
+	L6
+30.6	L1	"	what	is	important	"	)	,	and	Jiufu	(	Nine	Houses	)	,	as	well	as	the	Spring	and	Autumn	Annals	of	Yanzi	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+30.7	L1	In	his	64th	chapter	,	"	Biography	of	Sima	Rangju	"	,	the	Grand	Historian	writes	,	"	I	have	read	Sima's	Art	of	War	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+30.8	L1	In	the	121st	chapter	,	"	Biographies	of	Scholars	"	,	he	writes	,	"	I	read	the	Imperial	Decrees	that	encouraged	education	officials	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+31.1	L1	Sima	Qian	wrote	of	the	problems	with	incomplete	,	fragmentary	and	contradictory	sources	.
+	L2
+	L3
+	L4
+	L5
+	L6
+31.2	L1	For	example	,	he	mentioned	in	the	preface	to	chapter	15	that	the	chronicle	records	of	the	feudal	states	kept	in	the	Zhou	dynasty's	archive	were	burnt	by	Qin	Shi	Huang	because	they	contained	criticisms	and	ridicule	of	the	Qin	state	,	and	that	the	Qin	annals	were	brief	and	incomplete	.
+	L2
+	L3
+	L4
+	L5
+	L6
+31.3	L1	In	the	13th	chapter	he	mentioned	that	the	chronologies	and	genealogies	of	different	ancient	texts	"	disagree	and	contradict	each	other	throughout	"	.
+	L2
+	L3
+	L4
+	L5
+	L6
+31.4	L1	In	his	18th	chapter	,	Sima	Qian	writes	,	"	I	have	set	down	only	what	is	certain	,	and	in	doubtful	cases	left	a	blank	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+32.1	L1	Reliability	and	accuracy
+	L2
+	L3
+	L4
+	L5
+	L6
+33.1	L1	Scholars	have	questioned	the	historicity	of	legendary	kings	of	the	ancient	periods	given	by	Sima	Qian	.
+	L2
+	L3
+	L4
+	L5
+	L6
+33.2	L1	Sima	Qian	began	the	Shiji	with	an	account	of	the	five	rulers	of	supreme	virtue	,	the	Five	Emperors	,	who	modern	scholars	,	such	as	those	from	the	Doubting	Antiquity	School	,	believe	to	be	originally	local	deities	of	the	peoples	of	ancient	China	.
+	L2
+	L3
+	L4
+	L5
+	L6
+33.3	L1	Sima	Qian	sifted	out	the	elements	of	the	supernatural	and	fantastic	which	seemed	to	contradict	their	existence	as	actual	human	monarchs	,	and	was	therefore	criticized	for	turning	myths	and	folklore	into	sober	history	.
+	L2
+	L3
+	L4
+	L5
+	L6
+34.1	L1	However	,	according	to	Joseph	Needham	,	who	wrote	in	1954	on	Sima	Qian's	accounts	of	the	kings	of	the	Shang	dynasty	(	c	.
+	L2
+	L3
+	L4
+	L5
+	L6
+34.2	L1	1600	–	c	.
+	L2
+	L3
+	L4
+	L5
+	L6
+34.3	L1	1050	BC	)	:
+	L2
+	L3
+	L4
+	L5
+	L6
+35.1	L1	It	was	commonly	maintained	that	Ssuma	Chhien	[	Sima	Qian	]	could	not	have	adequate	historical	materials	for	his	account	of	what	had	happened	more	than	a	thousand	years	earlier	.
+	L2
+	L3
+	L4
+	L5
+	L6
+35.2	L1	One	may	judge	of	the	astonishment	of	many	,	therefore	,	when	it	appeared	that	no	less	than	twenty-three	of	the	thirty	rulers'	name	were	to	be	clearly	found	on	the	indisputably	genuine	Anyang	bones	.
+	L2
+	L3
+	L4
+	L5
+	L6
+35.3	L1	It	must	be	,	therefore	,	that	Ssuma	Chhien	[	Sima	Qian	]	did	have	fairly	reliable	materials	at	his	disposal	—	a	fact	which	underlines	once	more	the	deep	historical-mindedness	of	the	Chinese	—	and	that	the	Shang	dynasty	is	perfectly	acceptable	.
+	L2
+	L3
+	L4
+	L5
+	L6
+36.1	L1	While	the	king	names	in	Sima	Qian's	history	of	the	Shang	dynasty	are	supported	by	inscriptions	on	the	oracle	bones	,	there	is	,	as	yet	,	no	archaeological	corroboration	of	Sima	Qian's	history	of	the	Xia	dynasty	.
+	L2
+	L3
+	L4
+	L5
+	L6
+37.1	L1	There	are	also	discrepancies	of	fact	such	as	dates	between	various	portions	of	the	work	.
+	L2
+	L3
+	L4
+	L5
+	L6
+37.2	L1	This	may	be	a	result	of	Sima	Qian's	use	of	different	source	texts	.
+	L2
+	L3
+	L4
+	L5
+	L6
+38.1	L1	Transmission	and	supplementation	by	other	writers
+	L2
+	L3
+	L4
+	L5
+	L6
+39.1	L1	After	ca	.
+	L2
+	L3
+	L4
+	L5
+	L6
+39.2	L1	91	BC	,	the	more-or-less	completed	manuscript	was	hidden	in	the	residence	of	the	author's	daughter	,	Sima	Ying	(	司馬英	)	,	to	avoid	destruction	under	Emperor	Wu	and	his	immediate	successor	Emperor	Zhao	.
+	L2
+	L3
+	L4
+	L5
+	L6
+39.3	L1	The	Shiji	was	finally	disseminated	during	the	reign	of	Emperor	Xuan	by	Sima	Qian's	grandson	(	through	his	daughter	)	,	Yang	Yun	(	楊惲	)	,	after	a	hiatus	of	around	twenty	years	.
+	L2
+	L3
+	L4
+	L5
+	L6
+40.1	L1	The	changes	in	the	manuscript	of	the	Shiji	during	this	hiatus	have	always	been	disputed	among	scholars	.
+	L2
+	L3
+	L4
+	L5
+	L6
+40.2	L1	That	the	text	was	more	or	less	complete	by	ca	.
+	L2
+	L3
+	L4
+	L5
+	L6
+40.3	L1	91	BC	is	established	in	the	Letter	to	Ren'an	(	報任安書	)	,	composed	in	the	Zhenghe	(	征和	)	era	of	Emperor	Wu's	reign	.
+	L2
+	L3
+	L4
+	L5
+	L6
+40.4	L1	In	this	letter	,	Sima	Qian	describes	his	work	as	"	spanning	from	the	time	of	the	Yellow	Emperor	to	the	present	age	and	consisting	of	ten	tables	,	twelve	basic	annals	,	eight	treatises	,	thirty	chapters	on	hereditary	houses	,	and	seventy	biographies	,	together	totaling	130	chapters	.	"
+	L2
+	L3
+	L4
+	L5
+	L6
+40.5	L1	These	numbers	are	likewise	given	in	the	postface	to	Shiji	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.1	L1	After	his	death	(	presumably	only	a	few	years	later	)	,	few	people	had	the	opportunity	to	see	the	whole	work	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.2	L1	However	,	various	additions	were	still	made	to	it	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.3	L1	The	historian	Liu	Zhiji	reported	the	names	of	a	total	of	fifteen	scholars	supposed	to	have	added	material	to	the	Shiji	during	the	period	after	the	death	of	Sima	Qian	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.4	L1	Only	the	additions	by	Chu	Shaosun	(	褚少孫	,	c	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.5	L1	105	–	c	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.6	L1	30	BC	)	are	clearly	indicated	by	adding	"	Mr	Chu	said	,	"
+	L2
+	L3
+	L4
+	L5
+	L6
+41.7	L1	(	Chu	xiansheng	yue	,	褚先生曰	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.8	L1	Already	in	the	first	century	AD	,	Ban	Biao	and	Ban	Gu	claimed	that	ten	chapters	in	Records	of	the	Grand	Historian	were	lacking	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.9	L1	A	large	number	of	chapters	dealing	with	the	first	century	of	the	Han	dynasty	(	i	.	e	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.10	L1	the	2nd	century	BC	)	correspond	exactly	to	the	relevant	chapters	from	the	Book	of	Han	(	Hanshu	)	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.11	L1	It	is	unclear	whether	those	chapters	initially	came	from	the	Shiji	or	from	the	Hanshu	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.12	L1	Researchers	Yves	Hervouet	(	1921–	1999	)	and	A	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.13	L1	F	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.14	L1	P	.
+	L2
+	L3
+	L4
+	L5
+	L6
+41.15	L1	Hulsewé	argued	that	the	originals	of	those	chapters	of	the	Shiji	were	lost	and	they	were	later	reconstructed	using	the	corresponding	chapters	from	the	Hanshu	.
+	L2
+	L3
+	L4
+	L5
+	L6
