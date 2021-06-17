@@ -1,5 +1,6 @@
 import re
 from copy import deepcopy
+import seg
 
 """This module can do a word-level segmentation. You are supposed to use the main(path,export) method in order to input the raw text and export the formatted text (both as filepath). 
 This is done in several steps:
@@ -303,21 +304,44 @@ def main(path,export):
         for _ in result:
             print(_)
 
-    lineTail="\n\tL2\n\tL3\n\tL4\n\tL5\n\tL6\n"
+    # A generic boilplate, L2-L6 are left blank. 
+    # lineTail="\n\tL2\n\tL3\n\tL4\n\tL5\n\tL6\n"
     with open(export, mode="a", encoding="utf-8") as exportFile:
         i=0
         j=0
         k=0
+        processor=seg.matchAText()
         for paragraph in result:
             i+=1
             for sentence in paragraph:
                 j+=1
+                # L1: segmentated raw text
                 exportFile.write(f"{i}.{j}\tL1\t")
                 exportFile.write("\t".join(sentence))
-                exportFile.write(lineTail)
+                # exportFile.write(lineTail)
+                # L2: morpheme-by-morpheme seg text
+                exportFile.write("\n\tL2\t")
+                exportFile.write("\t".join([processor.matchResult(word,"seg",) for word in sentence]))
+                # L3: English glossary
+                exportFile.write("\n\tL3\t")
+                exportFile.write("\t".join([processor.matchResult(word,"en") for word in sentence]))
+                #L4: Idiomatic English translation, left blanc
+                exportFile.write("\n\tL4")
+                #L5: Chinese glossary
+                exportFile.write("\n\tL5\t")
+                exportFile.write("\t".join([processor.matchResult(word,"zh") for word in sentence]))
+                #L6: Idiomatic Chinese translation, left blanc
+                exportFile.write("\n\tL6\n")
                 k+=len(sentence)
             j=clear(j)
         i=clear(i)
         print("="*12)
         print(f"Word count: {k}")
+        print(f"Automatic glossing percentage: {processor.hitcount*100/k:2f}%")
+        hitcount=clear(processor.hitcount)
         k=clear(k)
+
+## TODO: Add extensibility
+## for each token: re matchup for an external dict object
+## formatting: possibility of formatting externally from excel
+## Not possible. 
