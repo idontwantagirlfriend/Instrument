@@ -114,10 +114,13 @@ def segSentence(rawtext):
     kami2="" # Cache level 1
     kami3=[] # Cache level 2
     kamiTotal=[] # Prepared result
+    quoteSet=["\"","»","”"]
+    sentenceSeperatorSet=[".","?","!"]
+    cliticSet=["'","-","’"]
     for c in range(len(kami)):
         # 1. For patterns like 'I saw this man."', when the symbol character precedes immediately the quotation mark. 
         try:
-            if (kami[c] in ["\"","»"]) and (kami[c-1].isalnum()==False) and (bool(re.findall("\s",kami[c-1]))==False) and re.findall("\s",kami[c+1]):
+            if (kami[c] in quoteSet) and (kami[c-1].isalnum()==False) and (bool(re.findall("\s",kami[c-1]))==False) and re.findall("\s",kami[c+1]):
             # For the following patterns: 
             # [...] safe and sound <str>." And</str> went on... [...]
             # =>
@@ -131,7 +134,7 @@ def segSentence(rawtext):
         except:
             pass
         try:
-            if (kami[c] in ["\"","»"]) and (kami[c-2].isalnum()==False) and (bool(re.findall("\s",kami[c-2]))==False) and re.findall("\s",kami[c+1]):
+            if (kami[c] in quoteSet) and (kami[c-2].isalnum()==False) and (bool(re.findall("\s",kami[c-2]))==False) and re.findall("\s",kami[c+1]):
             # For the following patterns: 
             # [...] safe and sound <str>. " And</str> went on... [...]
             # =>
@@ -147,7 +150,7 @@ def segSentence(rawtext):
         # 2. For general space patterns like \s. Detect paragraph (sentence segementation) by the previous character. 
         if re.findall("\s",kami[c]):
             try:
-                if (kami[c-1] in [".","?","!"]):
+                if (kami[c-1] in sentenceSeperatorSet):
                     kami3.append(kami2)
                     kamiTotal.append(kami3)
                     kami2=clear(kami2)
@@ -173,7 +176,7 @@ def segSentence(rawtext):
             elif re.findall("\s",kami[c-1]):
                 # 3.1.3 symbol characters preceded by space characters, i.e. \s\W
                 pass
-            elif kami[c] in ["'","-","’"]:
+            elif kami[c] in cliticSet:
                 # 3.1.1 symbol characters as part of the preceding word: est-ce
                 pass
             else:
@@ -193,8 +196,8 @@ def segSentence(rawtext):
             if (c==len(kami)-1):
                 kami3.append(kami2)
                 kami2=clear(kami2)
-            elif (bool(re.findall("\s",kami[c+1]))==False) and (kami[c] in ["'","-","’"]):
-                # 3.2.1 no space afterward: symbol characters as part of the following word, i.e. est-ce
+            elif (bool(re.findall("\s",kami[c+1]))==False) and (kami[c] in cliticSet):
+                # 3.2.1 no space afterward: symbol characters as part of the following word aka clitic, i.e. est-ce
                 pass
             elif (bool(re.findall("\s",kami[c+1]))==False):
                 #3.2.2 no space afterward: the space was dropped, then start a new word, i.e. "He did not see me.But I was always there"
@@ -251,7 +254,7 @@ def segSentence(rawtext):
     manualWordIndex=0
     for sentence in kamiTotal:
         for word in sentence:
-            if (word=="»") and (manualWordIndex==0):
+            if (word in ["»","”"]) and (manualWordIndex==0):
                 if manualSentenceIndex>0:
                     kami4[manualSentenceIndex-1].append(word)
                     continue
