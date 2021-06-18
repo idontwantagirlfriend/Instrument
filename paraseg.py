@@ -31,7 +31,7 @@ def wash(list):
     return temp
 
 def tag(rawtext):
-    """Main executive function that return the (not very accurate) segmentated text. """
+    """(Deprecated) Main executive function that return the (not very accurate) segmentated text. """
     kami=wash(rawtext)
     kami2=""
     for c in range(len(kami)):
@@ -337,11 +337,6 @@ def main(path,export):
         i=clear(i)
         print("="*12)
         print(f"Word count: {k}")
-        print(f"Automatic glossing percentage: {processor.hitcount*100/k:2f}%")
-        hitcount=clear(processor.hitcount)
+        print(f"Automatic glossing percentage: {processor.hitcount/k:.2%}")
+        processor.hitcount=clear(processor.hitcount)
         k=clear(k)
-
-## TODO: Add extensibility
-## for each token: re matchup for an external dict object
-## formatting: possibility of formatting externally from excel
-## Not possible. 
