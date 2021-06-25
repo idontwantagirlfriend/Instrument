@@ -1,6 +1,7 @@
 import re
 from copy import deepcopy
 import seg
+from naturalJoin import naturalJoin
 
 """This module can do a word-level segmentation. You are supposed to use the main(path,export) method in order to input the raw text and export the formatted text (both as filepath). 
 This is done in several steps:
@@ -52,7 +53,7 @@ def segSentence(rawtext):
     kamiTotal = []  # Prepared result
     quoteSet = ["\"", "»", "”"]
     sentenceSeperatorSet = [".", "?", "!"]
-    cliticSet = ["'", "-", "’"]
+    cliticSet = ["'", "-", "’", "%"]
     for c in range(len(kami)):
         # 1. For patterns like 'I saw this man."', when the symbol character precedes immediately the quotation mark.
         try:
@@ -61,11 +62,25 @@ def segSentence(rawtext):
                 # [...] safe and sound <str>." And</str> went on... [...]
                 # =>
                 # [[...], [[...] safe and sound."], [And went on... [...]], [...]]
+
+                if re.findall(",", kami[c-1]):
+                    kami3.append(kami2)
+                    kami2=clear(kami2)
+                # There doesn't exist any space char between "," and close quotation mark, we thus need to delimit the previous word manually.
+
                 kami2 += kami[c]
                 kami3.append(kami2)
-                kamiTotal.append(kami3)
+                if re.findall(",", kami[c-1]):
+                    pass
+                # "," does not start a new sentence
+
+                else:
+                    kamiTotal.append(kami3)
+                    kami3 = clear(kami3)
+                # Other char can start a new sentence, such as:
+                # He picked up his bag and retorted: "I don't think so."
+                # Chaque fois que mes parents commençaient: « Il faut que tu.. »
                 kami2 = clear(kami2)
-                kami3 = clear(kami3)
                 continue
         except:
             pass
@@ -77,9 +92,15 @@ def segSentence(rawtext):
                 # [[...], [[...] safe and sound. "], [And went on... [...]], [...]]
                 kami2 += kami[c]
                 kami3.append(kami2)
-                kamiTotal.append(kami3)
+                if re.findall(",", kami[c-2]):
+                    pass
+                # "," does not start a new sentence
+                else:
+                    kamiTotal.append(kami3)
+                    kami3 = clear(kami3)
+                # Other char can start a new sentence, such as:
+                # Chaque fois que mes parents commençaient: « Il faut que tu.. »
                 kami2 = clear(kami2)
-                kami3 = clear(kami3)
                 continue
         except:
             pass
@@ -132,13 +153,12 @@ def segSentence(rawtext):
             if (c == len(kami)-1):
                 kami3.append(kami2)
                 kami2 = clear(kami2)
-            elif (bool(re.findall("\s", kami[c+1])) == False) and (kami[c] in cliticSet):
+            elif bool(re.findall("\s", kami[c+1])) is not True and (kami[c] in cliticSet):
                 # 3.2.1 no space afterward: symbol characters as part of the following word aka clitic, i.e. est-ce
                 pass
-            elif (bool(re.findall("\s", kami[c+1])) == False):
-                # 3.2.2 no space afterward: the space was dropped, then start a new word, i.e. "He did not see me.But I was always there"
-                kami3.append(kami2)
-                kami2 = clear(kami2)
+            elif bool(re.findall("\s", kami[c+1])) is not True:
+                # 3.2.2 no space afterward: the space was dropped, normally this would not happen. Ignore this possibility. Only consider occasion of float numbers like "99.39" or "7.27"
+                pass
             else:
                 # 3.2 normally: right after the symbol character there's no word division, as a space character immediately follows
                 pass
@@ -186,25 +206,19 @@ def segSentence(rawtext):
 
     # Shrink closing quote onto the previous list (sentence).
     # Correspond to the part ' kami2=re.sub("\s*»","\t»",kami2) '.
-    manualSentenceIndex = 0
-    manualWordIndex = 0
-    for sentence in kamiTotal:
-        for word in sentence:
-            if (word in ["»", "”"]) and (manualWordIndex == 0):
-                if manualSentenceIndex > 0:
-                    kami4[manualSentenceIndex-1].append(word)
+    for (sentenceIndex, sentence) in enumerate(kamiTotal):
+        for (wordIndex, word) in enumerate(sentence):
+            if (word in ["»", "”"]) and (wordIndex == 0):
+                if sentenceIndex > 0:
+                    kami4[sentenceIndex-1].append(word)
                     continue
             kami3.append(word)
-            manualWordIndex += 1
         kami4.append(kami3)
-        manualSentenceIndex += 1
 
         kami3 = clear(kami3)
-        manualWordIndex = 0
 
     kamiTotal = kami4
     kami4 = clear(kami4)
-    manualSentenceIndex = clear(manualSentenceIndex)
 
     # print("Hanging quotation marks have been fixed. Previewing...")
     # if len(kamiTotal)>10:
@@ -256,8 +270,10 @@ def main(path, export):
             i += 1
             for sentence in paragraph:
                 j += 1
+                # Preview line: the complete sentence
+                exportFile.write(f"{i}.{j}\t{naturalJoin(sentence)}")
                 # L1: segmentated raw text
-                exportFile.write(f"{i}.{j}\tL1\t")
+                exportFile.write(f"\n\tL1\t")
                 exportFile.write("\t".join(sentence))
                 # exportFile.write(lineTail)
                 # L2: morpheme-by-morpheme seg text

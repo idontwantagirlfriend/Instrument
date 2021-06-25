@@ -1,0 +1,56 @@
+1.1	
+	L1	"It's	99,53%	authentic	,"
+	L2				
+	L3				
+	L4
+	L5				
+	L6
+1.2	
+	L1	one	of	the	experts	said	to	the	reporter	.
+	L2									.
+	L3									.
+	L4
+	L5									。
+	L6
+1.1	
+	L1	"It's	99,53%	authentic	,"
+	L2				
+	L3				
+	L4
+	L5				
+	L6
+1.2	
+	L1	one	of	the	experts	said	to	the	reporter	.
+	L2									.
+	L3									.
+	L4
+	L5									。
+	L6
+1.1	"It's 99,53% authentic ,"
+	L1	"It's	99,53%	authentic	,"
+	L2				
+	L3				
+	L4
+	L5				
+	L6
+1.2	one of the experts said to the reporter.
+	L1	one	of	the	experts	said	to	the	reporter	.
+	L2									.
+	L3									.
+	L4
+	L5									。
+	L6
+1.1	"It's 99,53% authentic ," one of the experts said to the reporter.
+	L1	"It's	99,53%	authentic	,"	one	of	the	experts	said	to	the	reporter	.
+	L2													.
+	L3													.
+	L4
+	L5													。
+	L6
+1.1	"It's 99,53% authentic, " one of the experts said to the reporter.
+	L1	"It's	99,53%	authentic	,	"	one	of	the	experts	said	to	the	reporter	.
+	L2				,	"									.
+	L3				,	"									.
+	L4
+	L5				，										。
+	L6

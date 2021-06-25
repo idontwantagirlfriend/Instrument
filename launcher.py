@@ -1,3 +1,3 @@
 
 import paraseg
-paraseg.main("text_fr.txt", "test_fr_result.txt")
+paraseg.main("Number.txt", "Number_result.txt")

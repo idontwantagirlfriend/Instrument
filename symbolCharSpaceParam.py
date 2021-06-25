@@ -1,0 +1,6 @@
+# langCode: "fr"
+noSpaceBeforeChars={
+    ",",
+    ".",
+    "…"
+}
