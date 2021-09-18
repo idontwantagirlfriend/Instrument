@@ -1,24 +1,42 @@
-## Version 0
-大家好，我自制了一个分词脚本，能够进行段落、句子和词等级的分割，输出结果按课程要求的标记格式设计，且可以直接复制到excel中（没进行L2-L6的标记，有句子序号）。届时只需要在L2-L6行进行标记。会使用python的同学或许可以省下一点点时间。
-使用方法：
-1. 在文本文件目录下运行。
-2. 输入文本文件路径(path)和输出文件路径(export)到main(path,export)方法。
-3. 复制输出文件(export)的内容，在excel中直接粘贴。
-设计时针对使用空格且引号形式为半角双引号""或 « »的语言（包括非拉丁字母的语言）。
+# How this segmentation tool works
 
-A word level segmentation tool that is made for Leipzig interlinear translation. The output content is formatted for direct copypaste to excel .xlsx files.
-**Still command level user interface, but fair enough**
-1.  Paste "paraseg.py" to the directory of raw texts;
-2.  Launch the method with the following parameters: [paraseg.]main(path,export);
-2.1.  path: path of the raw texts to process;
-2.2.  export: target path for the glossed texts;
-3.  Find the glossed texts at the location given at (export) parameter, and paste the content directly into an excel sheet.
+The code was terribly messy so I do a bit clean up.
+- Segmentation:
+    # 1. Current char is quotation mark? For patterns like 'I saw this man."', .
+        # For the following patterns:
+                # [...] safe and sound <str>." And</str> went on... [...]
+                # =>
+                # [[...], [[...] safe and sound."], [And went on... [...]], [...]]
+        # There doesn't exist any space char between "," and close quotation mark, we thus need to delimit the previous word manually.
+                            # "," does not start a new sentence
+                # Other char can start a new sentence, such as:
+                # He picked up his bag and retorted: "I don't think so."
+                # Chaque fois que mes parents commençaient: « Il faut que tu.. »
+        # For the following patterns:
+                # [...] safe and sound <str>. " And</str> went on... [...]
+                # =>
+                # [[...], [[...] safe and sound. "], [And went on... [...]], [...]]
+                                # "," does not start a new sentence
+                # Other char can start a new sentence, such as:
+                # Chaque fois que mes parents commençaient: « Il faut que tu... »
 
-## Version 1.0
-**Attention** This program is for program assisted *Leipzig interlinear glossing*. Currently, the morpheme-by-morpheme glossing is supported only for the following language combination: {(L1:fr)(L2:seg_fr)(L3:en)(L4)(L5:zh)(L6)}. 
-Updated pool_zh, pool_en, pool_seg to enable program assisted glossing. Use seg.py to match tokens with glossing contents. Added word count indicator and automatic glossing percentage indicator. 
-Word level segmentation is done directly in paraseg and is operational for alphabetical languages that uses upper flat double quotation marks (""), opening and closing double quotation marks (“”), and French left and right quotation marks "«»".
-## Version 1.1
-Revised indicator: .2% format.
-## Version 1.1.2 
-Removed deprecated methods. Added launcher. 
+      # 2. Current char is a space char? Detect paragraph (sentence segementation) by the previous character.
+
+      # 3. Normal non-alnum symbol char? 
+        # 3.1 normally: the preceding word and the symbol characters, as two individual words.
+        # 3.1.1 symbol characters as part of the preceding word: est-ce
+        # 3.1.2 numbers with digits: "7.27", "99,39"
+        # 3.1.3 symbol characters preceded by space characters, i.e. \s\W
+        # 3.2 normally: right after the symbol character there's no word division, as a space character immediately follows
+        # 3.2.1 no space afterward: symbol characters as part of the following word, i.e. est-ce
+        # 3.2.2 no space afterward: the space was dropped, then start a new word, i.e. "He did not see me.But I was always there"
+      # 4. Normally, without divisor, will add character at current pointer into cache level 1
+       # Finalize. Submit remaining chars in caches. Clear caches.
+        # By this time, the segmentation should have already been done in kamiTotal:list.
+        # Shrink closing quote onto the previous list (sentence).
+
+- Glossing:
+  - Simply map every token to a glossing tag. Done. Res in pool_*.py
+
+
+
