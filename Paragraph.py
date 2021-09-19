@@ -42,6 +42,11 @@ class Paragraph(Parser):
 
                 continue
 
+            if manager.isStartOfQuote(content, index):
+                manager.handleStartOfQuote(content, index)
+
+                continue
+
             if manager.isSpaceChar(content[index]):
                 manager.handleSpaceChar(content, index)
 

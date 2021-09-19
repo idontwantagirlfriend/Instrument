@@ -4,7 +4,7 @@ import re
 class CharContextManager:
     sentenceSeperators = [".", "?", "!"]
     cliticChars = ["'", "-", "’", "%"]
-    quotationMarks = ["\"", "»", "”"]
+    quotationMarks = ["\"", "»", "“", "”", "\""]
     closingQuotes = ["»", "”"]
 
     def __init__(self):
@@ -20,6 +20,12 @@ class CharContextManager:
         previousChar = text[position-1]
         if not re.findall(",", previousChar):
             self.__endOfSentence()
+
+        self.handleCache(text, position)
+
+    def handleStartOfQuote(self, text, position):
+        self.__wordCache.append(text[position])
+        self.__endOfWord()
 
     def handleSpaceChar(self, text, position):
         self.__endOfWord()
@@ -38,8 +44,11 @@ class CharContextManager:
         if position == 0:
             self.__endOfWord()
 
+        self.handleCache(text, position)
+
     def handleAlNumChar(self, text, position):
         self.__wordCache.append(text[position])
+        self.handleCache(text, position)
 
     def handleCache(self, text, position):
         if position == len(text):
@@ -56,15 +65,15 @@ class CharContextManager:
                 self.isAlNum(previousChar) and self.isSpaceChar(previousChar)) and self.isSpaceChar(nextChar)
         return result
 
-    # def isStartOfQuote(self, string, pos):
-    #     result = pos > 1
-    #     if result:
-    #         currentChar = string[pos]
-    #         previousChar = string[pos-1]
-    #         beforePreviousChar = string[pos-2]
-    #         result &= (self.isQuotationMark(currentChar)) and not(self.isAlNum(
-    #             beforePreviousChar) and self.isSpaceChar(beforePreviousChar)) and self.isSpaceChar(previousChar)
-    #     return result
+    def isStartOfQuote(self, string, pos):
+        result = pos > 1
+        if result:
+            currentChar = string[pos]
+            previousChar = string[pos-1]
+            beforePreviousChar = string[pos-2]
+            result &= (self.isQuotationMark(currentChar)) and not(self.isAlNum(
+                beforePreviousChar) and self.isSpaceChar(beforePreviousChar)) and self.isSpaceChar(previousChar)
+        return result
 
     def isEndOfWord(self, string, pos):
         result = pos > 0
