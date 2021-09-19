@@ -1,143 +1,68 @@
-import re
 from utils import utils
+from Parser import Parser
+from CharContextManager import CharContextManager
 
 
-class Paragraph():
+class Paragraph(Parser):
+    """[summary]
+    A word-level segmentation. You are supposed to use the main(path,export) method in order to input the raw text and export the formatted text (both as filepath).
+    This is done in several steps:\n
+    0. Seperate paragraphs by linebreaker characters i.e. \n
+    0.1 Wash null paragraphs: only non-empty lines are counted into the paragraphs\n
+    1. Scan every character to be a...\n
+        1.1. quotation mark? Does current sentence end?\n
+        1.2. space char? Ends current word. Does current sentence end?\n
+        1.3. normal non-alnum symbol char? Does current sentence end?\n
+        1.4. other char: only add it to current word. \n
+    2. Finalize: add cached word/sentence to parsed paragraph. \n
+    3. Wash null tokens. \n
 
-    sentenceSeperators = [".", "?", "!"]
-    cliticChars = ["'", "-", "’", "%"]
-    quotationMarks = ["\"", "»", "”"]
-    closingQuotes = ["»", "”"]
+    Returns:\n
+        list
+    """
 
-    def __init__(self, content):
-        self.content = content
+    def __init__(self, content: str):
+        super().__init__()
+        self.__content = content.strip()
+        self.__charContextManager = CharContextManager()
+
+    def addElement(self, newElement):
+        return super().addElement(newElement)
 
     def parse(self):
-        isQuotationMark, isAlNum, isSpaceChar, isClosingQuote, isSentenceSeparator, isClitic = Paragraph.isQuotationMark, Paragraph.isAlNum, Paragraph.isSpaceChar, Paragraph.isClosingQuote, Paragraph.isSentenceSeparator, Paragraph.isClitic
+        content = self.__content
+        manager = self.__charContextManager
 
-        currentWord = ""
-        currentSentence = []
-        result = []
-        for index in range(len(self.content)):
-            currentChar = self.content[index]
+        self.__resetParseResult()
 
-            try:
-                previousChar = self.content[index-1]
-                nextChar = self.content[index+1]
+        for index in range(len(content)):
 
-                if isQuotationMark(currentChar) and not(isAlNum(previousChar) and isSpaceChar(previousChar)) and isSpaceChar(nextChar):
-                    if re.findall(",", previousChar):
-                        currentSentence.append(currentWord)
-                        currentWord = utils.flush(currentWord)
-
-                    currentWord += currentChar
-                    currentSentence.append(currentWord)
-
-                    if re.findall(",", previousChar):
-                        pass
-
-                    else:
-                        result.append(currentSentence)
-                        currentSentence = utils.flush(currentSentence)
-
-                    currentWord = utils.flush(currentWord)
-                    continue
-            except IndexError:
-                pass
-
-            try:
-                previousChar = self.content[index-1]
-                nextChar = self.content[index+1]
-                beforePreviousChar = self.content[index-2]
-
-                if (isQuotationMark(currentChar)) and not(isAlNum(beforePreviousChar) and isSpaceChar(beforePreviousChar)) and isSpaceChar(nextChar):
-                    currentWord += currentChar
-                    currentSentence.append(currentWord)
-
-                    if re.findall(",", beforePreviousChar):
-                        pass
-                    else:
-                        result.append(currentSentence)
-                        currentSentence = utils.flush(currentSentence)
-
-                    currentWord = utils.flush(currentWord)
-                    continue
-            except IndexError:
-                pass
-
-            if isSpaceChar(currentChar):
-                currentSentence.append(currentWord)
-                currentWord = utils.flush(currentWord)
-
-                if (isSentenceSeparator(previousChar)):
-                    result.append(currentSentence)
-                    currentSentence = utils.flush(currentSentence)
+            if manager.isEndOfQuote(content, index):
+                manager.handleEndOfQuote(content, index)
 
                 continue
 
-            if not isAlNum(currentChar):
-                if index == 0 or isSpaceChar(previousChar) or isClitic(currentChar) or ((previousChar.isdigit()) and (nextChar.isdigit())):
-                    pass
-                else:
-                    currentSentence.append(currentWord)
-                    currentWord = utils.flush(currentWord)
+            if manager.isSpaceChar(content[index]):
+                manager.handleSpaceChar(content, index)
 
-                currentWord += currentChar
-
-                if (index == len(self.content)-1):
-                    currentSentence.append(currentWord)
-                    currentWord = utils.flush(currentWord)
                 continue
 
-            currentWord += currentChar
+            if not manager.isAlNum(content[index]):
+                manager.handleSymbol(content, index)
+                continue
 
-        currentSentence.append(currentWord)
-        result.append(currentSentence)
-        currentWord = utils.flush(currentWord)
-        currentSentence = utils.flush(currentSentence)
+            manager.handleAlNumChar(content, index)
 
-        utils.removeNullElements(result)
-        for sentence in result:
-            utils.removeNullElements(sentence)
+        self._elements = manager.result
 
-        for (sentenceIndex, currentSentence) in enumerate(result):
-            for (wordIndex, currentWord) in enumerate(currentSentence):
-                if sentenceIndex > 0 and isClosingQuote(currentWord) and wordIndex == 0:
-                    result[sentenceIndex-1].append(currentWord)
-                    currentSentence.pop(wordIndex)
-                    continue
+        self.__removeNullTokens()
 
-        return result
+        return self._elements
 
-    @property
-    def next(self):
-        if hasattr(self, "_next"):
-            return self._next
+    def __removeNullTokens(self):
+        utils.removeFalsyElements(self._elements)
+        for sentence in self._elements:
+            utils.removeFalsyElements(sentence)
 
-    @next.setter
-    def next(self, newParagraph):
-        self._next = newParagraph
-
-    @staticmethod
-    def isAlNum(char):
-        return isinstance(char, str) and char.isalnum()
-
-    @staticmethod
-    def isSpaceChar(char):
-        return bool(re.findall("\s", char))
-
-    @staticmethod
-    def isQuotationMark(char):
-        return char in Paragraph.quotationMarks
-
-    @staticmethod
-    def isClosingQuote(char):
-        return char in Paragraph.closingQuotes
-
-    @staticmethod
-    def isSentenceSeparator(char):
-        return char in Paragraph.sentenceSeperators
-
-    @staticmethod
-    def isClitic(char):
-        return char in Paragraph.cliticChars
+    def __resetParseResult(self):
+        self._elements = []
