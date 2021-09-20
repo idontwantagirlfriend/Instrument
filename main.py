@@ -17,6 +17,7 @@ def parseFile(path, exportPath):
     previewResult(result)
 
     exportToFile(exportPath, result)
+    return True
 
 
 def previewResult(result):

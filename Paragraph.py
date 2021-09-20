@@ -39,17 +39,18 @@ class Paragraph(Parser):
 
             if manager.isEndOfQuote(content, index):
                 manager.handleEndOfQuote(content, index)
-
                 continue
 
             if manager.isStartOfQuote(content, index):
                 manager.handleStartOfQuote(content, index)
+                continue
 
+            if manager.isStartOfQuoteBadUsage(content, index):
+                manager.handleStartOfQuoteBadUsage(content, index)
                 continue
 
             if manager.isSpaceChar(content[index]):
                 manager.handleSpaceChar(content, index)
-
                 continue
 
             if not manager.isAlNum(content[index]):
@@ -62,6 +63,14 @@ class Paragraph(Parser):
 
         self.__removeNullTokens()
 
+        return self._elements
+
+    @property
+    def content(self):
+        return self.__content
+
+    @property
+    def elements(self):
         return self._elements
 
     def __removeNullTokens(self):

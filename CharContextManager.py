@@ -27,6 +27,10 @@ class CharContextManager:
         self.__wordCache.append(text[position])
         self.__endOfWord()
 
+    def handleStartOfQuoteBadUsage(self, text, position):
+        self.__endOfWord()
+        self.handleStartOfQuote(text, position)
+
     def handleSpaceChar(self, text, position):
         self.__endOfWord()
 
@@ -51,7 +55,7 @@ class CharContextManager:
         self.handleCache(text, position)
 
     def handleCache(self, text, position):
-        if position == len(text):
+        if position == len(text)-1:
             self.__endOfWord()
             self.__endOfSentence()
 
@@ -73,6 +77,16 @@ class CharContextManager:
             beforePreviousChar = string[pos-2]
             result &= (self.isQuotationMark(currentChar)) and not(self.isAlNum(
                 beforePreviousChar) and self.isSpaceChar(beforePreviousChar)) and self.isSpaceChar(previousChar)
+        return result
+
+    def isStartOfQuoteBadUsage(self, string, pos):
+        result = pos > 1 and pos < len(string)-1
+        if result:
+            currentChar = string[pos]
+            previousChar = string[pos-1]
+            nextChar = string[pos+1]
+            result &= self.isQuotationMark(
+                currentChar) and previousChar == ":" and self.isAlNum(nextChar)
         return result
 
     def isEndOfWord(self, string, pos):
